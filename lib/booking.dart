@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_app/ModelData.dart';
+import 'package:travel_app/home_page.dart';
 import 'main.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
@@ -30,6 +31,7 @@ class _BookingState extends State<Booking> {
   Widget build(BuildContext context){
     ToastContext().init(context);
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Stack(
           children: [
@@ -38,6 +40,17 @@ class _BookingState extends State<Booking> {
             width: double.infinity,
             child: Image.network(widget.image,fit: BoxFit.cover,),
           ),
+            Align(
+                alignment: Alignment.topLeft,
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 50,left: 10),
+                  child: InkWell(
+                       onTap: (){
+                         Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => HomePage())
+                         );
+                       },
+                      child: Icon(CupertinoIcons.back,size: 25,color: Colors.white,)),
+                )),
             Align(
               alignment: Alignment.bottomRight,
               child: Container(

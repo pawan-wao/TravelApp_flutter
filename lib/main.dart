@@ -1,35 +1,36 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:travel_app/home_page.dart';
+import 'package:travel_app/splash_Screen.dart';
 import 'ModelData.dart';
 import 'package:carousel_slider/carousel_options.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:travel_app/explore_more_data.dart';
 import 'package:toast/toast.dart';
-
 import 'booking.dart';
+
+
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatefulWidget{
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
+class MyApp extends StatelessWidget{
 
-class _MyAppState extends State<MyApp> {
-
-  var indexi;
   @override
   Widget build(BuildContext context){
     ToastContext().init(context);
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: 'splash',
+
       routes: {
-        'booking': (context) => Booking(key: UniqueKey(),
-          image: ModelData.item[indexi].image.toString(),price: ModelData.item[indexi].price,
-          desc: ModelData.item[indexi].desc, name: ModelData.item[indexi].name, location: ModelData.item[indexi].location,),
+        'hom' :(context) => HomePage(),
+        'splash': (context) => SplashScreen(),
+
       },
-      home: Scaffold(
+
+      /* home: Scaffold(
         drawer: Drawer(),
         body: SingleChildScrollView(
           child: Padding(
@@ -192,7 +193,7 @@ class _MyAppState extends State<MyApp> {
               ),
             ],
           ),
-      ),
+      ),*/
     );
   }
 }
