@@ -40,7 +40,7 @@ https://www.mediafire.com/file/rjf82vnr4aprhpd/travel_app.apk/file
 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/flutterFit.git
+git clone https://github.com/pawan-wao/TravelApp_flutter.git
 ```
 2. Clone the repository
 Launch Android Studio.\
