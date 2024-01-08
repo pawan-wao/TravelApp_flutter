@@ -1,5 +1,3 @@
-
-
 🌍 Introducing TravelEase ✈️ - my latest project exploring the world of Flutter app development.
 
 ## 📱 What's TravelEase?
@@ -51,7 +49,7 @@ Click Open.
 3.Run the app:\
 Connect a device or use an emulator.\
 Click on the Run button in Android Studio.
-## Feedback
 
+## Feedback
 If you have any feedback, please reach out to me at waonicegood@gmail.com
 
