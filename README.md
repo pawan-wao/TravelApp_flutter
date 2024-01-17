@@ -11,7 +11,6 @@ From browsing destinations to booking flights, it aims to simplify the way we ex
 
 **Android Studio:** The official IDE for Android development.
 
-
 ## App Preview
 
 ![splash1](https://github.com/pawan-wao/TravelApp_flutter/assets/119276655/310a50e4-0bdb-462b-86c8-af65f2ad1446)
